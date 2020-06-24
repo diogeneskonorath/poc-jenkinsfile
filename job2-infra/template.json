@@ -24,8 +24,8 @@
     },
     {
       "type": "file",
-      "source": "/var/lib/jenkins/workspace/infra/app/poc-jenkinsfile/restService.war",
-      "destination": "/usr/local/restService.war"
+      "source": "/var/lib/jenkins/workspace/infra/app/poc-jenkinsfile/poc-jenkinsfile.war",
+      "destination": "/usr/local/poc-jenkinsfile.war"
     },
     {
       "type": "ansible-local",
