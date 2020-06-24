@@ -1,0 +1,21 @@
+pipeline {
+   agent any
+
+   stages {
+      stage('Download Docker image') {
+         steps {
+            sh '''
+                 docker pull diogeneskonorath/poc-jenkinsfile:restService
+               '''
+         }
+      }
+
+      stage('Run Docker image') {
+         steps {
+            sh '''
+                 docker run -p 8083:8083 -d diogeneskonorath/poc-jenkinsfile:restService
+               '''
+         }
+      }
+   }
+}
